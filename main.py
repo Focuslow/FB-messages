@@ -89,7 +89,7 @@ app.layout = html.Div(children=[
 
 def main_time_limit(value):
 
-    timestamps = ms.time_limiter(value,msgs_end)
+    timestamps = ms.time_limiter(value)
 
     fig2 = plotppl(data,sums_update=True,timestamps=timestamps)
 

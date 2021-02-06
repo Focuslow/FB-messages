@@ -139,7 +139,7 @@ def plot_overtime(time_list, type):
     return fig1
 
 
-def time_limiter(year,end):
+def time_limiter(year):
     if isinstance(year[0], float) or isinstance(year[1], float):
         month = [int((float(str(i - int(i))) / (1 / 12)).__round__(1)) for i in year]
         year = [int(str(i)[0:4]) for i in year]
